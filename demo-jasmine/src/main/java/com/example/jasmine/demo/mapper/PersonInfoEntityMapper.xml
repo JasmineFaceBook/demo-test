@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.jasmine.demo.mapper.PersonInfoEntityMapper" >
+  <resultMap id="BaseResultMap" type="com.example.jasmine.demo.entity.PersonInfoEntity" >
+    <id column="pi_id" property="id" jdbcType="BIGINT" />
+    <result column="pi_user_id" property="userId" jdbcType="BIGINT" />
+    <result column="pi_job_no" property="jobNo" jdbcType="VARCHAR" />
+    <result column="pi_full_name" property="fullName" jdbcType="VARCHAR" />
+    <result column="pi_before_name" property="beforeName" jdbcType="VARCHAR" />
+    <result column="pi_dept_id" property="deptId" jdbcType="BIGINT" />
+    <result column="pi_nation" property="nation" jdbcType="VARCHAR" />
+    <result column="pi_id_number" property="idNumber" jdbcType="VARCHAR" />
+    <result column="pi_sex" property="sex" jdbcType="VARCHAR" />
+    <result column="pi_birthplace" property="birthplace" jdbcType="VARCHAR" />
+    <result column="pi_native_place" property="nativePlace" jdbcType="VARCHAR" />
+    <result column="pi_native_city" property="nativeCity" jdbcType="VARCHAR" />
+    <result column="pi_native_county" property="nativeCounty" jdbcType="VARCHAR" />
+    <result column="pi_register_nature" property="registerNature" jdbcType="VARCHAR" />
+    <result column="pi_registered_addr" property="registeredAddr" jdbcType="VARCHAR" />
+    <result column="pi_emergency_contact" property="emergencyContact" jdbcType="VARCHAR" />
+    <result column="pi_emergency_phone" property="emergencyPhone" jdbcType="VARCHAR" />
+    <result column="pi_contact_mobile" property="contactMobile" jdbcType="VARCHAR" />
+    <result column="pi_fixed_phone" property="fixedPhone" jdbcType="VARCHAR" />
+    <result column="pi_birthday" property="birthday" jdbcType="VARCHAR" />
+    <result column="pi_age" property="age" jdbcType="INTEGER" />
+    <result column="pi_marital_status" property="maritalStatus" jdbcType="INTEGER" />
+    <result column="pi_word_time" property="wordTime" jdbcType="VARCHAR" />
+    <result column="pi_work_age" property="workAge" jdbcType="VARCHAR" />
+    <result column="pi_company_time" property="companyTime" jdbcType="VARCHAR" />
+    <result column="pi_company_age" property="companyAge" jdbcType="VARCHAR" />
+    <result column="pi_political" property="political" jdbcType="VARCHAR" />
+    <result column="pi_party_time" property="partyTime" jdbcType="VARCHAR" />
+    <result column="pi_first_school" property="firstSchool" jdbcType="VARCHAR" />
+    <result column="pi_first_education" property="firstEducation" jdbcType="VARCHAR" />
+    <result column="pi_first_degree" property="firstDegree" jdbcType="VARCHAR" />
+    <result column="pi_home_addr" property="homeAddr" jdbcType="VARCHAR" />
+    <result column="pi_postcode" property="postcode" jdbcType="VARCHAR" />
+    <result column="pi_email" property="email" jdbcType="VARCHAR" />
+    <result column="pi_high_edu_sch" property="highEduSch" jdbcType="VARCHAR" />
+    <result column="pi_high_edu_major" property="highEduMajor" jdbcType="VARCHAR" />
+    <result column="pi_high_major" property="highMajor" jdbcType="VARCHAR" />
+    <result column="pi_present_post" property="presentPost" jdbcType="VARCHAR" />
+    <result column="pi_pre_post_time" property="prePostTime" jdbcType="VARCHAR" />
+    <result column="pi_before_company" property="beforeCompany" jdbcType="VARCHAR" />
+    <result column="pi_before_post" property="beforePost" jdbcType="VARCHAR" />
+    <result column="pi_pre_tech_qlevel" property="preTechQlevel" jdbcType="INTEGER" />
+    <result column="pi_pre_tech_quali" property="preTechQuali" jdbcType="VARCHAR" />
+    <result column="pi_family_member" property="familyMember" jdbcType="VARCHAR" />
+    <result column="pi_emp_type" property="empType" jdbcType="INTEGER" />
+    <result column="pi_creator_id" property="creatorId" jdbcType="BIGINT" />
+    <result column="pi_create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="pi_updator_id" property="updatorId" jdbcType="BIGINT" />
+    <result column="pi_update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="pi_language_ability" property="languageAbility" jdbcType="VARCHAR" />
+    <result column="pi_professional_competence" property="professionalCompetence" jdbcType="VARCHAR" />
+    <result column="pi_personal_strengths" property="personalStrengths" jdbcType="VARCHAR" />
+    <result column="pi_computer_level" property="computerLevel" jdbcType="VARCHAR" />
+    <result column="pi_pre_tech_pos" property="preTechPos" jdbcType="VARCHAR" />
+    <result column="pi_job_position" property="jobPosition" jdbcType="INTEGER" />
+    <result column="pi_health" property="health" jdbcType="VARCHAR" />
+    <result column="pi_high_degree" property="highDegree" jdbcType="VARCHAR" />
+    <result column="pi_state" property="state" jdbcType="INTEGER" />
+    <result column="pi_allot_int" property="allotInt" jdbcType="INTEGER" />
+    <result column="pi_wechat_id" property="wechatId" jdbcType="VARCHAR" />
+    <result column="pi_high_edu_sch_depart" property="highEduSchDepart" jdbcType="VARCHAR" />
+    <result column="pi_first_school_depart" property="firstSchoolDepart" jdbcType="VARCHAR" />
+    <result column="pi_retire_time" property="retireTime" jdbcType="TIMESTAMP" />
+    <result column="pi_work_age_add" property="workAgeAdd" jdbcType="VARCHAR" />
+    <result column="pi_data1" property="data1" jdbcType="VARCHAR" />
+    <result column="pi_data2" property="data2" jdbcType="VARCHAR" />
+    <result column="pi_data3" property="data3" jdbcType="VARCHAR" />
+    <result column="pi_data4" property="data4" jdbcType="VARCHAR" />
+    <result column="pi_job_position_data" property="jobPositionData" jdbcType="VARCHAR" />
+    <result column="pi_data5" property="data5" jdbcType="VARCHAR" />
+    <result column="pi_data6" property="data6" jdbcType="VARCHAR" />
+    <result column="pi_data7" property="data7" jdbcType="VARCHAR" />
+    <result column="pi_data8" property="data8" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    pi.id as pi_id, pi.user_id as pi_user_id, pi.job_no as pi_job_no, pi.full_name as pi_full_name, 
+    pi.before_name as pi_before_name, pi.dept_id as pi_dept_id, pi.nation as pi_nation, 
+    pi.id_number as pi_id_number, pi.sex as pi_sex, pi.birthplace as pi_birthplace, pi.native_place as pi_native_place, 
+    pi.native_city as pi_native_city, pi.native_county as pi_native_county, pi.register_nature as pi_register_nature, 
+    pi.registered_addr as pi_registered_addr, pi.emergency_contact as pi_emergency_contact, 
+    pi.emergency_phone as pi_emergency_phone, pi.contact_mobile as pi_contact_mobile, 
+    pi.fixed_phone as pi_fixed_phone, pi.birthday as pi_birthday, pi.age as pi_age, pi.marital_status as pi_marital_status, 
+    pi.word_time as pi_word_time, pi.work_age as pi_work_age, pi.company_time as pi_company_time, 
+    pi.company_age as pi_company_age, pi.political as pi_political, pi.party_time as pi_party_time, 
+    pi.first_school as pi_first_school, pi.first_education as pi_first_education, pi.first_degree as pi_first_degree, 
+    pi.home_addr as pi_home_addr, pi.postcode as pi_postcode, pi.email as pi_email, pi.high_edu_sch as pi_high_edu_sch, 
+    pi.high_edu_major as pi_high_edu_major, pi.high_major as pi_high_major, pi.present_post as pi_present_post, 
+    pi.pre_post_time as pi_pre_post_time, pi.before_company as pi_before_company, pi.before_post as pi_before_post, 
+    pi.pre_tech_qlevel as pi_pre_tech_qlevel, pi.pre_tech_quali as pi_pre_tech_quali, 
+    pi.family_member as pi_family_member, pi.emp_type as pi_emp_type, pi.creator_id as pi_creator_id, 
+    pi.create_time as pi_create_time, pi.updator_id as pi_updator_id, pi.update_time as pi_update_time, 
+    pi.language_ability as pi_language_ability, pi.professional_competence as pi_professional_competence, 
+    pi.personal_strengths as pi_personal_strengths, pi.computer_level as pi_computer_level, 
+    pi.pre_tech_pos as pi_pre_tech_pos, pi.job_position as pi_job_position, pi.health as pi_health, 
+    pi.high_degree as pi_high_degree, pi.state as pi_state, pi.allot_int as pi_allot_int, 
+    pi.wechat_id as pi_wechat_id, pi.high_edu_sch_depart as pi_high_edu_sch_depart, pi.first_school_depart as pi_first_school_depart, 
+    pi.retire_time as pi_retire_time, pi.work_age_add as pi_work_age_add, pi.data1 as pi_data1, 
+    pi.data2 as pi_data2, pi.data3 as pi_data3, pi.data4 as pi_data4, pi.job_position_data as pi_job_position_data, 
+    pi.data5 as pi_data5, pi.data6 as pi_data6, pi.data7 as pi_data7, pi.data8 as pi_data8
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from person_info pi
+    where pi.id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from person_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.example.jasmine.demo.entity.PersonInfoEntity" >
+    insert into person_info (id, user_id, job_no, 
+      full_name, before_name, dept_id, 
+      nation, id_number, sex, 
+      birthplace, native_place, native_city, 
+      native_county, register_nature, registered_addr, 
+      emergency_contact, emergency_phone, contact_mobile, 
+      fixed_phone, birthday, age, 
+      marital_status, word_time, work_age, 
+      company_time, company_age, political, 
+      party_time, first_school, first_education, 
+      first_degree, home_addr, postcode, 
+      email, high_edu_sch, high_edu_major, 
+      high_major, present_post, pre_post_time, 
+      before_company, before_post, pre_tech_qlevel, 
+      pre_tech_quali, family_member, emp_type, 
+      creator_id, create_time, updator_id, 
+      update_time, language_ability, professional_competence, 
+      personal_strengths, computer_level, pre_tech_pos, 
+      job_position, health, high_degree, 
+      state, allot_int, wechat_id, 
+      high_edu_sch_depart, first_school_depart, retire_time, 
+      work_age_add, data1, data2, 
+      data3, data4, job_position_data, 
+      data5, data6, data7, 
+      data8)
+    values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{jobNo,jdbcType=VARCHAR}, 
+      #{fullName,jdbcType=VARCHAR}, #{beforeName,jdbcType=VARCHAR}, #{deptId,jdbcType=BIGINT}, 
+      #{nation,jdbcType=VARCHAR}, #{idNumber,jdbcType=VARCHAR}, #{sex,jdbcType=VARCHAR}, 
+      #{birthplace,jdbcType=VARCHAR}, #{nativePlace,jdbcType=VARCHAR}, #{nativeCity,jdbcType=VARCHAR}, 
+      #{nativeCounty,jdbcType=VARCHAR}, #{registerNature,jdbcType=VARCHAR}, #{registeredAddr,jdbcType=VARCHAR}, 
+      #{emergencyContact,jdbcType=VARCHAR}, #{emergencyPhone,jdbcType=VARCHAR}, #{contactMobile,jdbcType=VARCHAR}, 
+      #{fixedPhone,jdbcType=VARCHAR}, #{birthday,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, 
+      #{maritalStatus,jdbcType=INTEGER}, #{wordTime,jdbcType=VARCHAR}, #{workAge,jdbcType=VARCHAR}, 
+      #{companyTime,jdbcType=VARCHAR}, #{companyAge,jdbcType=VARCHAR}, #{political,jdbcType=VARCHAR}, 
+      #{partyTime,jdbcType=VARCHAR}, #{firstSchool,jdbcType=VARCHAR}, #{firstEducation,jdbcType=VARCHAR}, 
+      #{firstDegree,jdbcType=VARCHAR}, #{homeAddr,jdbcType=VARCHAR}, #{postcode,jdbcType=VARCHAR}, 
+      #{email,jdbcType=VARCHAR}, #{highEduSch,jdbcType=VARCHAR}, #{highEduMajor,jdbcType=VARCHAR}, 
+      #{highMajor,jdbcType=VARCHAR}, #{presentPost,jdbcType=VARCHAR}, #{prePostTime,jdbcType=VARCHAR}, 
+      #{beforeCompany,jdbcType=VARCHAR}, #{beforePost,jdbcType=VARCHAR}, #{preTechQlevel,jdbcType=INTEGER}, 
+      #{preTechQuali,jdbcType=VARCHAR}, #{familyMember,jdbcType=VARCHAR}, #{empType,jdbcType=INTEGER}, 
+      #{creatorId,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, #{updatorId,jdbcType=BIGINT}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{languageAbility,jdbcType=VARCHAR}, #{professionalCompetence,jdbcType=VARCHAR}, 
+      #{personalStrengths,jdbcType=VARCHAR}, #{computerLevel,jdbcType=VARCHAR}, #{preTechPos,jdbcType=VARCHAR}, 
+      #{jobPosition,jdbcType=INTEGER}, #{health,jdbcType=VARCHAR}, #{highDegree,jdbcType=VARCHAR}, 
+      #{state,jdbcType=INTEGER}, #{allotInt,jdbcType=INTEGER}, #{wechatId,jdbcType=VARCHAR}, 
+      #{highEduSchDepart,jdbcType=VARCHAR}, #{firstSchoolDepart,jdbcType=VARCHAR}, #{retireTime,jdbcType=TIMESTAMP}, 
+      #{workAgeAdd,jdbcType=VARCHAR}, #{data1,jdbcType=VARCHAR}, #{data2,jdbcType=VARCHAR}, 
+      #{data3,jdbcType=VARCHAR}, #{data4,jdbcType=VARCHAR}, #{jobPositionData,jdbcType=VARCHAR}, 
+      #{data5,jdbcType=VARCHAR}, #{data6,jdbcType=VARCHAR}, #{data7,jdbcType=VARCHAR}, 
+      #{data8,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.jasmine.demo.entity.PersonInfoEntity" >
+    insert into person_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="jobNo != null" >
+        job_no,
+      </if>
+      <if test="fullName != null" >
+        full_name,
+      </if>
+      <if test="beforeName != null" >
+        before_name,
+      </if>
+      <if test="deptId != null" >
+        dept_id,
+      </if>
+      <if test="nation != null" >
+        nation,
+      </if>
+      <if test="idNumber != null" >
+        id_number,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="birthplace != null" >
+        birthplace,
+      </if>
+      <if test="nativePlace != null" >
+        native_place,
+      </if>
+      <if test="nativeCity != null" >
+        native_city,
+      </if>
+      <if test="nativeCounty != null" >
+        native_county,
+      </if>
+      <if test="registerNature != null" >
+        register_nature,
+      </if>
+      <if test="registeredAddr != null" >
+        registered_addr,
+      </if>
+      <if test="emergencyContact != null" >
+        emergency_contact,
+      </if>
+      <if test="emergencyPhone != null" >
+        emergency_phone,
+      </if>
+      <if test="contactMobile != null" >
+        contact_mobile,
+      </if>
+      <if test="fixedPhone != null" >
+        fixed_phone,
+      </if>
+      <if test="birthday != null" >
+        birthday,
+      </if>
+      <if test="age != null" >
+        age,
+      </if>
+      <if test="maritalStatus != null" >
+        marital_status,
+      </if>
+      <if test="wordTime != null" >
+        word_time,
+      </if>
+      <if test="workAge != null" >
+        work_age,
+      </if>
+      <if test="companyTime != null" >
+        company_time,
+      </if>
+      <if test="companyAge != null" >
+        company_age,
+      </if>
+      <if test="political != null" >
+        political,
+      </if>
+      <if test="partyTime != null" >
+        party_time,
+      </if>
+      <if test="firstSchool != null" >
+        first_school,
+      </if>
+      <if test="firstEducation != null" >
+        first_education,
+      </if>
+      <if test="firstDegree != null" >
+        first_degree,
+      </if>
+      <if test="homeAddr != null" >
+        home_addr,
+      </if>
+      <if test="postcode != null" >
+        postcode,
+      </if>
+      <if test="email != null" >
+        email,
+      </if>
+      <if test="highEduSch != null" >
+        high_edu_sch,
+      </if>
+      <if test="highEduMajor != null" >
+        high_edu_major,
+      </if>
+      <if test="highMajor != null" >
+        high_major,
+      </if>
+      <if test="presentPost != null" >
+        present_post,
+      </if>
+      <if test="prePostTime != null" >
+        pre_post_time,
+      </if>
+      <if test="beforeCompany != null" >
+        before_company,
+      </if>
+      <if test="beforePost != null" >
+        before_post,
+      </if>
+      <if test="preTechQlevel != null" >
+        pre_tech_qlevel,
+      </if>
+      <if test="preTechQuali != null" >
+        pre_tech_quali,
+      </if>
+      <if test="familyMember != null" >
+        family_member,
+      </if>
+      <if test="empType != null" >
+        emp_type,
+      </if>
+      <if test="creatorId != null" >
+        creator_id,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updatorId != null" >
+        updator_id,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+      <if test="languageAbility != null" >
+        language_ability,
+      </if>
+      <if test="professionalCompetence != null" >
+        professional_competence,
+      </if>
+      <if test="personalStrengths != null" >
+        personal_strengths,
+      </if>
+      <if test="computerLevel != null" >
+        computer_level,
+      </if>
+      <if test="preTechPos != null" >
+        pre_tech_pos,
+      </if>
+      <if test="jobPosition != null" >
+        job_position,
+      </if>
+      <if test="health != null" >
+        health,
+      </if>
+      <if test="highDegree != null" >
+        high_degree,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+      <if test="allotInt != null" >
+        allot_int,
+      </if>
+      <if test="wechatId != null" >
+        wechat_id,
+      </if>
+      <if test="highEduSchDepart != null" >
+        high_edu_sch_depart,
+      </if>
+      <if test="firstSchoolDepart != null" >
+        first_school_depart,
+      </if>
+      <if test="retireTime != null" >
+        retire_time,
+      </if>
+      <if test="workAgeAdd != null" >
+        work_age_add,
+      </if>
+      <if test="data1 != null" >
+        data1,
+      </if>
+      <if test="data2 != null" >
+        data2,
+      </if>
+      <if test="data3 != null" >
+        data3,
+      </if>
+      <if test="data4 != null" >
+        data4,
+      </if>
+      <if test="jobPositionData != null" >
+        job_position_data,
+      </if>
+      <if test="data5 != null" >
+        data5,
+      </if>
+      <if test="data6 != null" >
+        data6,
+      </if>
+      <if test="data7 != null" >
+        data7,
+      </if>
+      <if test="data8 != null" >
+        data8,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="jobNo != null" >
+        #{jobNo,jdbcType=VARCHAR},
+      </if>
+      <if test="fullName != null" >
+        #{fullName,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeName != null" >
+        #{beforeName,jdbcType=VARCHAR},
+      </if>
+      <if test="deptId != null" >
+        #{deptId,jdbcType=BIGINT},
+      </if>
+      <if test="nation != null" >
+        #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="idNumber != null" >
+        #{idNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthplace != null" >
+        #{birthplace,jdbcType=VARCHAR},
+      </if>
+      <if test="nativePlace != null" >
+        #{nativePlace,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCity != null" >
+        #{nativeCity,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCounty != null" >
+        #{nativeCounty,jdbcType=VARCHAR},
+      </if>
+      <if test="registerNature != null" >
+        #{registerNature,jdbcType=VARCHAR},
+      </if>
+      <if test="registeredAddr != null" >
+        #{registeredAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="emergencyContact != null" >
+        #{emergencyContact,jdbcType=VARCHAR},
+      </if>
+      <if test="emergencyPhone != null" >
+        #{emergencyPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="contactMobile != null" >
+        #{contactMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="fixedPhone != null" >
+        #{fixedPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="maritalStatus != null" >
+        #{maritalStatus,jdbcType=INTEGER},
+      </if>
+      <if test="wordTime != null" >
+        #{wordTime,jdbcType=VARCHAR},
+      </if>
+      <if test="workAge != null" >
+        #{workAge,jdbcType=VARCHAR},
+      </if>
+      <if test="companyTime != null" >
+        #{companyTime,jdbcType=VARCHAR},
+      </if>
+      <if test="companyAge != null" >
+        #{companyAge,jdbcType=VARCHAR},
+      </if>
+      <if test="political != null" >
+        #{political,jdbcType=VARCHAR},
+      </if>
+      <if test="partyTime != null" >
+        #{partyTime,jdbcType=VARCHAR},
+      </if>
+      <if test="firstSchool != null" >
+        #{firstSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="firstEducation != null" >
+        #{firstEducation,jdbcType=VARCHAR},
+      </if>
+      <if test="firstDegree != null" >
+        #{firstDegree,jdbcType=VARCHAR},
+      </if>
+      <if test="homeAddr != null" >
+        #{homeAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="postcode != null" >
+        #{postcode,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="highEduSch != null" >
+        #{highEduSch,jdbcType=VARCHAR},
+      </if>
+      <if test="highEduMajor != null" >
+        #{highEduMajor,jdbcType=VARCHAR},
+      </if>
+      <if test="highMajor != null" >
+        #{highMajor,jdbcType=VARCHAR},
+      </if>
+      <if test="presentPost != null" >
+        #{presentPost,jdbcType=VARCHAR},
+      </if>
+      <if test="prePostTime != null" >
+        #{prePostTime,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeCompany != null" >
+        #{beforeCompany,jdbcType=VARCHAR},
+      </if>
+      <if test="beforePost != null" >
+        #{beforePost,jdbcType=VARCHAR},
+      </if>
+      <if test="preTechQlevel != null" >
+        #{preTechQlevel,jdbcType=INTEGER},
+      </if>
+      <if test="preTechQuali != null" >
+        #{preTechQuali,jdbcType=VARCHAR},
+      </if>
+      <if test="familyMember != null" >
+        #{familyMember,jdbcType=VARCHAR},
+      </if>
+      <if test="empType != null" >
+        #{empType,jdbcType=INTEGER},
+      </if>
+      <if test="creatorId != null" >
+        #{creatorId,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatorId != null" >
+        #{updatorId,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="languageAbility != null" >
+        #{languageAbility,jdbcType=VARCHAR},
+      </if>
+      <if test="professionalCompetence != null" >
+        #{professionalCompetence,jdbcType=VARCHAR},
+      </if>
+      <if test="personalStrengths != null" >
+        #{personalStrengths,jdbcType=VARCHAR},
+      </if>
+      <if test="computerLevel != null" >
+        #{computerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="preTechPos != null" >
+        #{preTechPos,jdbcType=VARCHAR},
+      </if>
+      <if test="jobPosition != null" >
+        #{jobPosition,jdbcType=INTEGER},
+      </if>
+      <if test="health != null" >
+        #{health,jdbcType=VARCHAR},
+      </if>
+      <if test="highDegree != null" >
+        #{highDegree,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=INTEGER},
+      </if>
+      <if test="allotInt != null" >
+        #{allotInt,jdbcType=INTEGER},
+      </if>
+      <if test="wechatId != null" >
+        #{wechatId,jdbcType=VARCHAR},
+      </if>
+      <if test="highEduSchDepart != null" >
+        #{highEduSchDepart,jdbcType=VARCHAR},
+      </if>
+      <if test="firstSchoolDepart != null" >
+        #{firstSchoolDepart,jdbcType=VARCHAR},
+      </if>
+      <if test="retireTime != null" >
+        #{retireTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="workAgeAdd != null" >
+        #{workAgeAdd,jdbcType=VARCHAR},
+      </if>
+      <if test="data1 != null" >
+        #{data1,jdbcType=VARCHAR},
+      </if>
+      <if test="data2 != null" >
+        #{data2,jdbcType=VARCHAR},
+      </if>
+      <if test="data3 != null" >
+        #{data3,jdbcType=VARCHAR},
+      </if>
+      <if test="data4 != null" >
+        #{data4,jdbcType=VARCHAR},
+      </if>
+      <if test="jobPositionData != null" >
+        #{jobPositionData,jdbcType=VARCHAR},
+      </if>
+      <if test="data5 != null" >
+        #{data5,jdbcType=VARCHAR},
+      </if>
+      <if test="data6 != null" >
+        #{data6,jdbcType=VARCHAR},
+      </if>
+      <if test="data7 != null" >
+        #{data7,jdbcType=VARCHAR},
+      </if>
+      <if test="data8 != null" >
+        #{data8,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.jasmine.demo.entity.PersonInfoEntity" >
+    update person_info
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="jobNo != null" >
+        job_no = #{jobNo,jdbcType=VARCHAR},
+      </if>
+      <if test="fullName != null" >
+        full_name = #{fullName,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeName != null" >
+        before_name = #{beforeName,jdbcType=VARCHAR},
+      </if>
+      <if test="deptId != null" >
+        dept_id = #{deptId,jdbcType=BIGINT},
+      </if>
+      <if test="nation != null" >
+        nation = #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="idNumber != null" >
+        id_number = #{idNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="birthplace != null" >
+        birthplace = #{birthplace,jdbcType=VARCHAR},
+      </if>
+      <if test="nativePlace != null" >
+        native_place = #{nativePlace,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCity != null" >
+        native_city = #{nativeCity,jdbcType=VARCHAR},
+      </if>
+      <if test="nativeCounty != null" >
+        native_county = #{nativeCounty,jdbcType=VARCHAR},
+      </if>
+      <if test="registerNature != null" >
+        register_nature = #{registerNature,jdbcType=VARCHAR},
+      </if>
+      <if test="registeredAddr != null" >
+        registered_addr = #{registeredAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="emergencyContact != null" >
+        emergency_contact = #{emergencyContact,jdbcType=VARCHAR},
+      </if>
+      <if test="emergencyPhone != null" >
+        emergency_phone = #{emergencyPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="contactMobile != null" >
+        contact_mobile = #{contactMobile,jdbcType=VARCHAR},
+      </if>
+      <if test="fixedPhone != null" >
+        fixed_phone = #{fixedPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null" >
+        birthday = #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null" >
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="maritalStatus != null" >
+        marital_status = #{maritalStatus,jdbcType=INTEGER},
+      </if>
+      <if test="wordTime != null" >
+        word_time = #{wordTime,jdbcType=VARCHAR},
+      </if>
+      <if test="workAge != null" >
+        work_age = #{workAge,jdbcType=VARCHAR},
+      </if>
+      <if test="companyTime != null" >
+        company_time = #{companyTime,jdbcType=VARCHAR},
+      </if>
+      <if test="companyAge != null" >
+        company_age = #{companyAge,jdbcType=VARCHAR},
+      </if>
+      <if test="political != null" >
+        political = #{political,jdbcType=VARCHAR},
+      </if>
+      <if test="partyTime != null" >
+        party_time = #{partyTime,jdbcType=VARCHAR},
+      </if>
+      <if test="firstSchool != null" >
+        first_school = #{firstSchool,jdbcType=VARCHAR},
+      </if>
+      <if test="firstEducation != null" >
+        first_education = #{firstEducation,jdbcType=VARCHAR},
+      </if>
+      <if test="firstDegree != null" >
+        first_degree = #{firstDegree,jdbcType=VARCHAR},
+      </if>
+      <if test="homeAddr != null" >
+        home_addr = #{homeAddr,jdbcType=VARCHAR},
+      </if>
+      <if test="postcode != null" >
+        postcode = #{postcode,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null" >
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="highEduSch != null" >
+        high_edu_sch = #{highEduSch,jdbcType=VARCHAR},
+      </if>
+      <if test="highEduMajor != null" >
+        high_edu_major = #{highEduMajor,jdbcType=VARCHAR},
+      </if>
+      <if test="highMajor != null" >
+        high_major = #{highMajor,jdbcType=VARCHAR},
+      </if>
+      <if test="presentPost != null" >
+        present_post = #{presentPost,jdbcType=VARCHAR},
+      </if>
+      <if test="prePostTime != null" >
+        pre_post_time = #{prePostTime,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeCompany != null" >
+        before_company = #{beforeCompany,jdbcType=VARCHAR},
+      </if>
+      <if test="beforePost != null" >
+        before_post = #{beforePost,jdbcType=VARCHAR},
+      </if>
+      <if test="preTechQlevel != null" >
+        pre_tech_qlevel = #{preTechQlevel,jdbcType=INTEGER},
+      </if>
+      <if test="preTechQuali != null" >
+        pre_tech_quali = #{preTechQuali,jdbcType=VARCHAR},
+      </if>
+      <if test="familyMember != null" >
+        family_member = #{familyMember,jdbcType=VARCHAR},
+      </if>
+      <if test="empType != null" >
+        emp_type = #{empType,jdbcType=INTEGER},
+      </if>
+      <if test="creatorId != null" >
+        creator_id = #{creatorId,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatorId != null" >
+        updator_id = #{updatorId,jdbcType=BIGINT},
+      </if>
+      <if test="updateTime != null" >
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="languageAbility != null" >
+        language_ability = #{languageAbility,jdbcType=VARCHAR},
+      </if>
+      <if test="professionalCompetence != null" >
+        professional_competence = #{professionalCompetence,jdbcType=VARCHAR},
+      </if>
+      <if test="personalStrengths != null" >
+        personal_strengths = #{personalStrengths,jdbcType=VARCHAR},
+      </if>
+      <if test="computerLevel != null" >
+        computer_level = #{computerLevel,jdbcType=VARCHAR},
+      </if>
+      <if test="preTechPos != null" >
+        pre_tech_pos = #{preTechPos,jdbcType=VARCHAR},
+      </if>
+      <if test="jobPosition != null" >
+        job_position = #{jobPosition,jdbcType=INTEGER},
+      </if>
+      <if test="health != null" >
+        health = #{health,jdbcType=VARCHAR},
+      </if>
+      <if test="highDegree != null" >
+        high_degree = #{highDegree,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=INTEGER},
+      </if>
+      <if test="allotInt != null" >
+        allot_int = #{allotInt,jdbcType=INTEGER},
+      </if>
+      <if test="wechatId != null" >
+        wechat_id = #{wechatId,jdbcType=VARCHAR},
+      </if>
+      <if test="highEduSchDepart != null" >
+        high_edu_sch_depart = #{highEduSchDepart,jdbcType=VARCHAR},
+      </if>
+      <if test="firstSchoolDepart != null" >
+        first_school_depart = #{firstSchoolDepart,jdbcType=VARCHAR},
+      </if>
+      <if test="retireTime != null" >
+        retire_time = #{retireTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="workAgeAdd != null" >
+        work_age_add = #{workAgeAdd,jdbcType=VARCHAR},
+      </if>
+      <if test="data1 != null" >
+        data1 = #{data1,jdbcType=VARCHAR},
+      </if>
+      <if test="data2 != null" >
+        data2 = #{data2,jdbcType=VARCHAR},
+      </if>
+      <if test="data3 != null" >
+        data3 = #{data3,jdbcType=VARCHAR},
+      </if>
+      <if test="data4 != null" >
+        data4 = #{data4,jdbcType=VARCHAR},
+      </if>
+      <if test="jobPositionData != null" >
+        job_position_data = #{jobPositionData,jdbcType=VARCHAR},
+      </if>
+      <if test="data5 != null" >
+        data5 = #{data5,jdbcType=VARCHAR},
+      </if>
+      <if test="data6 != null" >
+        data6 = #{data6,jdbcType=VARCHAR},
+      </if>
+      <if test="data7 != null" >
+        data7 = #{data7,jdbcType=VARCHAR},
+      </if>
+      <if test="data8 != null" >
+        data8 = #{data8,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.jasmine.demo.entity.PersonInfoEntity" >
+    update person_info
+    set user_id = #{userId,jdbcType=BIGINT},
+      job_no = #{jobNo,jdbcType=VARCHAR},
+      full_name = #{fullName,jdbcType=VARCHAR},
+      before_name = #{beforeName,jdbcType=VARCHAR},
+      dept_id = #{deptId,jdbcType=BIGINT},
+      nation = #{nation,jdbcType=VARCHAR},
+      id_number = #{idNumber,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      birthplace = #{birthplace,jdbcType=VARCHAR},
+      native_place = #{nativePlace,jdbcType=VARCHAR},
+      native_city = #{nativeCity,jdbcType=VARCHAR},
+      native_county = #{nativeCounty,jdbcType=VARCHAR},
+      register_nature = #{registerNature,jdbcType=VARCHAR},
+      registered_addr = #{registeredAddr,jdbcType=VARCHAR},
+      emergency_contact = #{emergencyContact,jdbcType=VARCHAR},
+      emergency_phone = #{emergencyPhone,jdbcType=VARCHAR},
+      contact_mobile = #{contactMobile,jdbcType=VARCHAR},
+      fixed_phone = #{fixedPhone,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      marital_status = #{maritalStatus,jdbcType=INTEGER},
+      word_time = #{wordTime,jdbcType=VARCHAR},
+      work_age = #{workAge,jdbcType=VARCHAR},
+      company_time = #{companyTime,jdbcType=VARCHAR},
+      company_age = #{companyAge,jdbcType=VARCHAR},
+      political = #{political,jdbcType=VARCHAR},
+      party_time = #{partyTime,jdbcType=VARCHAR},
+      first_school = #{firstSchool,jdbcType=VARCHAR},
+      first_education = #{firstEducation,jdbcType=VARCHAR},
+      first_degree = #{firstDegree,jdbcType=VARCHAR},
+      home_addr = #{homeAddr,jdbcType=VARCHAR},
+      postcode = #{postcode,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      high_edu_sch = #{highEduSch,jdbcType=VARCHAR},
+      high_edu_major = #{highEduMajor,jdbcType=VARCHAR},
+      high_major = #{highMajor,jdbcType=VARCHAR},
+      present_post = #{presentPost,jdbcType=VARCHAR},
+      pre_post_time = #{prePostTime,jdbcType=VARCHAR},
+      before_company = #{beforeCompany,jdbcType=VARCHAR},
+      before_post = #{beforePost,jdbcType=VARCHAR},
+      pre_tech_qlevel = #{preTechQlevel,jdbcType=INTEGER},
+      pre_tech_quali = #{preTechQuali,jdbcType=VARCHAR},
+      family_member = #{familyMember,jdbcType=VARCHAR},
+      emp_type = #{empType,jdbcType=INTEGER},
+      creator_id = #{creatorId,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      updator_id = #{updatorId,jdbcType=BIGINT},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      language_ability = #{languageAbility,jdbcType=VARCHAR},
+      professional_competence = #{professionalCompetence,jdbcType=VARCHAR},
+      personal_strengths = #{personalStrengths,jdbcType=VARCHAR},
+      computer_level = #{computerLevel,jdbcType=VARCHAR},
+      pre_tech_pos = #{preTechPos,jdbcType=VARCHAR},
+      job_position = #{jobPosition,jdbcType=INTEGER},
+      health = #{health,jdbcType=VARCHAR},
+      high_degree = #{highDegree,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER},
+      allot_int = #{allotInt,jdbcType=INTEGER},
+      wechat_id = #{wechatId,jdbcType=VARCHAR},
+      high_edu_sch_depart = #{highEduSchDepart,jdbcType=VARCHAR},
+      first_school_depart = #{firstSchoolDepart,jdbcType=VARCHAR},
+      retire_time = #{retireTime,jdbcType=TIMESTAMP},
+      work_age_add = #{workAgeAdd,jdbcType=VARCHAR},
+      data1 = #{data1,jdbcType=VARCHAR},
+      data2 = #{data2,jdbcType=VARCHAR},
+      data3 = #{data3,jdbcType=VARCHAR},
+      data4 = #{data4,jdbcType=VARCHAR},
+      job_position_data = #{jobPositionData,jdbcType=VARCHAR},
+      data5 = #{data5,jdbcType=VARCHAR},
+      data6 = #{data6,jdbcType=VARCHAR},
+      data7 = #{data7,jdbcType=VARCHAR},
+      data8 = #{data8,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

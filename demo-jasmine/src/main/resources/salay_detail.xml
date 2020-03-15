@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<classPathEntry
+		location="D:/myjava/mysql-connector-java-5.1.30-bin.jar" />
+	<context id="context">
+		<commentGenerator>
+			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+			<property name="suppressAllComments" value="true" />
+			<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.188:3336/zb_hr?characterEncoding=utf-8" 
+			userId="root"
+			password="123.com" />
+			
+		<!-- 生成实体对象 -->	
+		<javaModelGenerator targetPackage="com.example.jasmine.demo.entity"
+			targetProject="demo-jasmine" />
+		
+		<!-- 生成mapper -->	
+		<sqlMapGenerator targetPackage="com.example.jasmine.demo.mapper"
+			targetProject="demo-jasmine" />
+		
+		<!-- 生成mapper对应的xml文件 -->	
+		<javaClientGenerator targetPackage="com.example.jasmine.demo.mapper"
+			targetProject="demo-jasmine" type="XMLMAPPER" />
+				
+		
+	
+	
+		<!-- <table alias="sdd" schema="" tableName="salary_detail_data"
+			domainObjectName="SalarydetailData" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+		</table> -->
+		<table alias="pi" schema="" tableName="person_info"
+			domainObjectName="PersonInfoEntity" enableCountByExample="false"
+			enableUpdateByExample="false" enableDeleteByExample="false"
+			enableSelectByExample="false" selectByExampleQueryId="false">
+		</table>
+
+		
+		
+		
+	</context>
+</generatorConfiguration>
